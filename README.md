@@ -1,6 +1,6 @@
 ##React demo application.
 
-To run it, clone or download this repository and execute the following:
+To run it, clone this repository, update submodules and execute the following:
 
 ```bash
 $ npm install
