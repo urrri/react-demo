@@ -1,0 +1,68 @@
+@import "~themes/vars";
+
+.page {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  line-height: 56px;
+  //z-index: 9;
+  background-color: @back-color;
+  border-bottom: 1px solid @border-color-split;
+
+  div:last-child {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+  }
+
+  div:first-child {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+  }
+
+  button {
+    min-width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+    transition: @transition-all;
+
+    &:hover:not(:disabled) {
+      color: @text-color;
+      background-color: fade(@text-color, 15%);
+    }
+  }
+}
+
+.content {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  background: @back-color;
+  padding: 24px;
+}
+
+.scroll {
+  overflow: auto;
+}
+
+.title {
+  font-size: 1.5rem
+}
+

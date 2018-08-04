@@ -1,0 +1,53 @@
+@import "~themes/vars";
+
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.sideBar {
+  position: relative;
+  width: 200px;
+  background-color: @back-color-dark;
+  color: @text-color-dark;
+  padding: 10px 0 0;
+}
+
+.page {
+  overflow: auto;
+  position: relative;
+  flex: 1;
+}
+
+.navMenu {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: darken(@text-color-dark, 20%);
+  line-height: 40px;
+  display: block;
+  padding: 0 24px;
+}
+
+.link:hover:not(.activeLink) {
+  color: @text-color-dark;
+}
+
+.activeLink {
+  background-color: @primary-color;
+  color: @text-on-primary-color;
+}
+
+.menuItemTitle{
+  margin-left: 10px;
+}
+
